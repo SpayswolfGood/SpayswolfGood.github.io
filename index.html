@@ -1,0 +1,1489 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PC - Sborka</title>
+    <style>
+        body {
+            background-image: url("References/img/bgc.png");
+            margin:0px 0px 0px;
+        }
+
+        img{
+            max-width:100%;
+        }
+
+            /*#region main*/
+
+            .container-main {
+                background-image: url("References/img/main.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 100%;
+            }
+
+            .up-menu {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+            }
+
+            .up-menu-button {
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 0.83vw;
+                text-align: center;
+                margin: 2.5% 1.5% 0px;
+                object-fit: cover;
+                transition: all ease 1s;
+                text-decoration: none;
+            }
+
+                .up-menu-button:hover {
+                    letter-spacing: 5px;
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
+
+
+            .up-menu-button-sign-home {
+                background-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+                width: 9.612%;
+                border-radius: 2em;
+                color: #FFFFFF;
+                /**/
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 0.83vw;
+                text-align: center;
+                padding-top: 0.65vw;
+                margin: 2.5% 1.5% 0px;
+                /**/
+                transition: all ease 1s;
+            }
+
+                .up-menu-button-sign-home:hover {
+                    background-image: linear-gradient(60deg, #dc4d52, #641c46);
+                }
+
+            .main-content {
+                margin-top: 10%;
+                margin-left: 6%;
+            }
+
+            .main-text {
+                font-size: 4vw;
+                font-weight: bold;
+                font-family: "Roboto", "Arial", sans-serif;
+                color: #FFFFFF;
+            }
+
+            .timer-data {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                gap: 30px;
+            }
+
+            .timer-box {
+                width: 5.7%;
+                height: 5.9vw;
+                background-color: #121212;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 2vw;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .timer-2text {
+                color: #ffffff;
+                font-size: 1vw;
+                opacity: 40%;
+            }
+
+            .down-menu-main {
+                background-color: #121212;
+                margin-top: 11%;
+                width: 100vw;
+                height: 6.8vw;
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+            }
+
+            #down-main-item {
+                margin: 2.5% 4.32% 0px;
+            }
+
+            .down-button-main {
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                width: 9.612%;
+                height: 1.70vw;
+                border-radius: 2em;
+                color: #FFFFFF;
+                /**/
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 0.83vw;
+                text-align: center;
+                padding-top: 0.65vw;
+                margin: 2.5% 4.32% 0px;
+                /**/
+                transition: all ease 1s;
+            }
+
+            .down-main-text {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 0.83vw;
+            }
+
+            .down-main-text2 {
+                float: right;
+                color: #FFFFFF;
+                opacity: 100%;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 0.83vw;
+            }
+
+            .down-main-slider {
+                background-color: #FFFFFF;
+                width: 37.2vw;
+                height: 0.31vw;
+                margin-top: 1.1%;
+                margin-bottom: 1.1%;
+            }
+
+            .down-main-slider-fill {
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                width: 24.2vw;
+                height: 0.31vw;
+            }
+            /*#endregion*/
+            /*#region about*/
+            .about-contener {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 10.5vw;
+            }
+
+            .about-fon-box {
+                width: 24.27vw;
+                height: 22.87vw;
+                border: 30px solid transparent;
+                border-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+                border-image-slice: 1;
+            }
+
+            .about-img {
+                margin-top: 3.4vw;
+            }
+
+            .about-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 2.58vw;
+                font-weight: bold;
+                object-fit: cover;
+            }
+
+            .about-text2 {
+                width: 100%;
+                margin-top: 2.36vw;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1vw;
+                object-fit: cover;
+            }
+
+            /*#endregion*/
+            /*#region start*/
+            .start-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 4.5vw;
+                padding-left: 312px;
+                padding-right: 312px;
+            }
+
+            .start-glav-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 10.5vw;
+                margin-left: 17vw;
+            }
+
+            .start-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 50px;
+                display: block
+            }
+
+            .start-text3 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                display: block
+            }
+
+            .start-item {
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                line-height: 140%;
+                flex-basis: 100%;
+            }
+
+            .start-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 100%;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .start-quare {
+                width: 100%;
+                height: 4vw;
+                background-image: linear-gradient(90deg,#C89AFC, #7C6AFA);
+            }
+            /*#endregion*/
+            /*#region advanture*/
+            .advanture-glav-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 10.5vw;
+                text-align: center;
+            }
+
+            .advanture-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 6.25vw;
+            }
+
+            .advanture-item {
+                text-align: center;
+            }
+
+            .advanture-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 1.25vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 3.1vw;
+                text-align: center;
+            }
+
+            .advanture-item-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 0.88vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 1.55vw;
+                text-align: center;
+            }
+            /*#endregion*/
+            /*#region parametrs*/
+            .partners-glav-text {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 10px;
+                padding-left: 52px;
+                grid-column: 0;
+                grid-row: 1 / -1;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .partners-container {
+                display: grid;
+                grid-template-columns: 17.2vw 17.2vw 17.2vw;
+                grid-template-rows: 7.8vw 7.8vw;
+                justify-content: center;
+            }
+
+            .partners-text-img-con {
+                padding-top: 231px;
+                padding-bottom: 60px;
+                margin-left: 17vw;
+                display: grid;
+                grid-template-columns: 4.9vw 70vw;
+                grid-template-rows: 4.9vw;
+            }
+
+            .partners-item {
+                text-align: center;
+            }
+            /*#endregion*/
+            /*#region program*/
+            .program-glav-text-img {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 200px;
+                text-align: center;
+            }
+
+            .program-text-opacity {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 0.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .program-text-opacity-tree {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 0.73vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .program-text-tree {
+                color: #FFFFFF;
+                font-size: 0.94vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 15px;
+            }
+
+            .trunk {
+                z-index: 1;
+                position: relative;
+                left: 50%;
+                top: 80px;
+                width: 6px;
+                height: 35.2vw;
+                background-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+            }
+
+            .program-item-left {
+                position: relative;
+                width: 19vw;
+                height: 5vw;
+                left: -21vw;
+                top: 10px;
+                text-align: right;
+            }
+
+            .program-item-right {
+                position: relative;
+                width: 19vw;
+                height: 5vw;
+                left: 2.3vw;
+                top: 10px;
+                text-align: left;
+            }
+
+            .program-line {
+                width: 2.1vw;
+                height: 0.1px;
+                background-color: #FFFFFF;
+                margin-left: 18.9vw;
+            }
+            /*#endregion*/
+            /*#region techers*/
+
+            .ticher-glav-text {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 10px;
+                padding-left: 52px;
+            }
+
+            .ticher-text-img-con {
+                padding-top: 171px;
+                margin-left: 17vw;
+                display: grid;
+                grid-template-columns: 4.9vw 70vw;
+                grid-template-rows: 4.9vw;
+            }
+
+            .ticher-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 6.25vw;
+            }
+
+            .ticher-item {
+                text-align: center;
+            }
+
+            .ticher-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 2vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 3.1vw;
+                text-align: center;
+            }
+
+            .ticher-item-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 2.5vw;
+                text-align: center;
+            }
+
+            .ticher-button {
+                width: 7.93vw;
+                border-radius: 2em;
+                border: 3px solid #FFFFFF;
+                text-align: center;
+                font-size: 0.83vw;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "Roboto", "Arial", sans-serif;
+                color: #FFFFFF;
+                padding-top: 0.78vw;
+                padding-bottom: 0.78vw;
+            }
+
+                .ticher-button:hover {
+                    color: black;
+                    background-color: white;
+                }
+            /*#endregion*/
+            /*#region end*/
+            .end-glav-text {
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 200px;
+                text-align: center;
+            }
+
+            .end-text-opacity {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 0.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .input-container {
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            input {
+                background-color: rgba(255,255,255, 0.2);
+                opacity: 80%;
+                z-index: 0;
+                padding-right: 180px;
+                border: none;
+                border-radius: 2em;
+                margin-right: -1.7vw;
+                font-size: 0.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+                input::placeholder {
+                    padding-left: 25px;
+                    opacity: 80%;
+                    color: white;
+                    font-size: 0.83vw;
+                    font-family: "Roboto", "Arial", sans-serif;
+                }
+
+            .end-input-text {
+                opacity: 80%;
+                color: white;
+            }
+
+            .end-button {
+                z-index: 1;
+                padding: 12.5px 32px;
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                color: #fff;
+                border: none;
+                border-radius: 2em;
+                cursor: pointer;
+                font-size: 0.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .end-button-container {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .end-down-button {
+                width: 50px;
+                height: 50px;
+                margin: 30px;
+                border-radius: 2em;
+                cursor: pointer;
+                background-image: linear-gradient(120deg, #C89AFC, #7C6AFA);
+                text-align: center;
+            }
+
+                .end-down-button:hover {
+                    opacity: 40%;
+                }
+
+            .end-img-but {
+                padding-top: 25%;
+            }
+            /*#endregion*/
+
+        
+
+        @media (max-width: 425px) {
+            /*#region main*/
+
+            .container-main {
+                background-image: url("References/img/main.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 100%;
+            }
+
+            .up-menu {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+            }
+
+            .up-menu-button {
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1.83vw;
+                text-align: center;
+                margin: 2.5% 1.5% 0px;
+                object-fit: cover;
+                transition: all ease 1s;
+                text-decoration: none;
+            }
+
+                .up-menu-button:hover {
+                    letter-spacing: 5px;
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
+
+
+            .up-menu-button-sign-home {
+                background-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+                width: 9.612%;
+                border-radius: 2em;
+                color: #FFFFFF;
+                /**/
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1.83vw;
+                text-align: center;
+                padding-top: 0.65vw;
+                margin: 2.5% 1.5% 0px;
+                /**/
+                transition: all ease 1s;
+            }
+
+                .up-menu-button-sign-home:hover {
+                    background-image: linear-gradient(60deg, #dc4d52, #641c46);
+                }
+
+            .main-content {
+                margin-top: 10%;
+                margin-left: 6%;
+            }
+
+            .main-text {
+                font-size: 4vw;
+                font-weight: bold;
+                font-family: "Roboto", "Arial", sans-serif;
+                color: #FFFFFF;
+            }
+
+            .timer-data {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                gap: 30px;
+            }
+
+            .timer-box {
+                width: 8.7%;
+                height: 8.9vw;
+                background-color: #121212;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 3vw;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .timer-2text {
+                color: #ffffff;
+                font-size: 2vw;
+                opacity: 40%;
+            }
+
+            .down-menu-main {
+                background-color: #121212;
+                margin-top: 11%;
+                width: 100vw;
+                height: 8.8vw;
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+            }
+
+            #down-main-item {
+                margin: 2.5% 1.32% 0px;
+            }
+
+            .down-button-main {
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                width: 15.612%;
+                height: 40%;
+                border-radius: 2em;
+                color: #FFFFFF;
+                /**/
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1.83vw;
+                text-align: center;
+                padding-top: 0.65vw;
+                margin: 2.5% 4.32% 0px;
+                /**/
+                transition: all ease 1s;
+            }
+
+            .down-main-text {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1.83vw;
+            }
+
+            .down-main-text2 {
+                float: right;
+                color: #FFFFFF;
+                opacity: 100%;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1.83vw;
+            }
+
+            .down-main-slider {
+                background-color: #FFFFFF;
+                width: 37.2vw;
+                height: 0.31vw;
+                margin-top: 1.1%;
+                margin-bottom: 1.1%;
+            }
+
+            .down-main-slider-fill {
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                width: 24.2vw;
+                height: 0.31vw;
+            }
+            /*#endregion*/
+            /*#region about*/
+            .about-contener {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 10.5vw;
+            }
+
+            .about-fon-box {
+                width: 24.27vw;
+                height: 22.87vw;
+                border: 30px solid transparent;
+                border-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+                border-image-slice: 1;
+            }
+
+            .about-img {
+                margin-top: 3.4vw;
+            }
+
+            .about-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 3.58vw;
+                font-weight: bold;
+                object-fit: cover;
+            }
+
+            .about-text2 {
+                width: 100%;
+                margin-top: 3.36vw;
+                color: #FFFFFF;
+                font-family: "Roboto", "Arial", sans-serif;
+                font-size: 1vw;
+                object-fit: cover;
+            }
+
+            /*#endregion*/
+            /*#region start*/
+            .start-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 4.5vw;
+                padding-left: 312px;
+                padding-right: 312px;
+            }
+
+            .start-glav-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 10.5vw;
+                margin-left: 17vw;
+            }
+
+            .start-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1.1vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 50px;
+                display: block
+            }
+
+            .start-text3 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 2vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                display: block;
+                
+            }
+
+            .start-item {
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                flex-basis: 100%;
+            }
+
+            .start-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 100%;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .start-quare {
+                width: 100%;
+                height: 4vw;
+                background-image: linear-gradient(90deg,#C89AFC, #7C6AFA);
+            }
+            /*#endregion*/
+            /*#region advanture*/
+            .advanture-glav-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 10.5vw;
+                text-align: center;
+            }
+
+            .advanture-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 6.25vw;
+            }
+
+            .advanture-item {
+                text-align: center;
+            }
+
+            .advanture-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 2.25vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 3.1vw;
+                text-align: center;
+            }
+
+            .advanture-item-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1.88vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 1.55vw;
+                text-align: center;
+            }
+            /*#endregion*/
+            /*#region parametrs*/
+            .partners-glav-text {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 10px;
+                padding-left: 52px;
+                grid-column: 0;
+                grid-row: 1 / -1;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .partners-container {
+                display: grid;
+                grid-template-columns: 17.2vw 17.2vw 17.2vw;
+                grid-template-rows: 7.8vw 7.8vw;
+                justify-content: center;
+            }
+
+            .partners-text-img-con {
+                padding-top: 231px;
+                padding-bottom: 60px;
+                margin-left: 17vw;
+                display: grid;
+                grid-template-columns: 4.9vw 70vw;
+                grid-template-rows: 4.9vw;
+            }
+
+            .partners-item {
+                text-align: center;
+            }
+            /*#endregion*/
+            /*#region program*/
+            .program-glav-text-img {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 200px;
+                text-align: center;
+            }
+
+            .program-text-opacity {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .program-text-opacity-tree {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1.73vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .program-text-tree {
+                color: #FFFFFF;
+                font-size: 1.94vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 15px;
+            }
+
+            .trunk {
+                z-index: 1;
+                position: relative;
+                left: 50%;
+                top: 80px;
+                width: 6px;
+                height: 70.2vw;
+                background-image: linear-gradient(60deg, #C89AFC, #7C6AFA);
+            }
+
+            .program-item-left {
+                position: relative;
+                width: 38vw;
+                height: 10vw;
+                left: -42vw;
+                top: 10px;
+                text-align: right;
+            }
+
+            .program-item-right {
+                position: relative;
+                width: 38vw;
+                height: 10vw;
+                left: 2.3vw;
+                top: 10px;
+                text-align: left;
+            }
+
+            .program-line {
+                width: 4.1vw;
+                height: 0.2px;
+                background-color: #FFFFFF;
+                margin-left: 37.9vw;
+            }
+            /*#endregion*/
+            /*#region techers*/
+
+            .ticher-glav-text {
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 10px;
+                padding-left: 52px;
+            }
+
+            .ticher-text-img-con {
+                padding-top: 171px;
+                margin-left: 17vw;
+                display: grid;
+                grid-template-columns: 4.9vw 70vw;
+                grid-template-rows: 4.9vw;
+            }
+
+            .ticher-container {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                justify-content: center;
+                margin-top: 6.25vw;
+            }
+
+            .ticher-item {
+                text-align: center;
+            }
+
+            .ticher-item-text {
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 2.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 3.1vw;
+                text-align: center;
+            }
+
+            .ticher-item-text2 {
+                width: 100%;
+                color: #FFFFFF;
+                opacity: 40%;
+                font-size: 1.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                margin-top: 2.5vw;
+                text-align: center;
+            }
+
+            .ticher-button {
+                width: 14.93vw;
+                border-radius: 2em;
+                border: 3px solid #FFFFFF;
+                text-align: center;
+                font-size: 1.83vw;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "Roboto", "Arial", sans-serif;
+                color: #FFFFFF;
+                padding-top: 0.78vw;
+                padding-bottom: 0.78vw;
+            }
+
+                .ticher-button:hover {
+                    color: black;
+                    background-color: white;
+                }
+            /*#endregion*/
+            /*#region end*/
+            .end-glav-text {
+                color: #FFFFFF;
+                font-size: 4.5vw;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 200px;
+                text-align: center;
+            }
+
+            .end-text-opacity {
+                color: #FFFFFF;
+                opacity: 40%;
+                font-family: "Roboto", "Arial", sans-serif;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .input-container {
+                padding-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            input {
+                background-color: rgba(255,255,255, 0.2);
+                opacity: 80%;
+                z-index: 0;
+                padding-right: 180px;
+                border: none;
+                border-radius: 2em;
+                margin-right: -1.7vw;
+                font-size: 1.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+                input::placeholder {
+                    padding-left: 25px;
+                    opacity: 80%;
+                    color: white;
+                    font-size: 1.83vw;
+                    font-family: "Roboto", "Arial", sans-serif;
+                }
+
+            .end-input-text {
+                opacity: 80%;
+                color: white;
+            }
+
+            .end-button {
+                z-index: 1;
+                padding: 12.5px 32px;
+                background-image: linear-gradient(60deg, #DF5950, #451046);
+                color: #fff;
+                border: none;
+                border-radius: 2em;
+                cursor: pointer;
+                font-size: 1.83vw;
+                font-family: "Roboto", "Arial", sans-serif;
+            }
+
+            .end-button-container {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .end-down-button {
+                width: 100px;
+                height: 100px;
+                margin: 30px;
+                border-radius: 2em;
+                cursor: pointer;
+                background-image: linear-gradient(120deg, #C89AFC, #7C6AFA);
+                text-align: center;
+            }
+
+                .end-down-button:hover {
+                    opacity: 40%;
+                }
+
+            .end-img-but {
+                padding-top: 25%;
+            }
+            /*#endregion*/
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!-- I am a comment ! -->
+    <!--#region main-screen  -->
+    <div class="container-main">
+
+
+
+        <!-- Верхнее меню -->
+        <div class="up-menu">
+            <img class="up-menu-button" src="References/svg/logo.svg" style="width:2.4%;height:2.4%;" />
+
+            <div class="up-menu-button" style="margin-left:auto;">Главная</div>
+            <div class="up-menu-button">Курсы</div>
+            <div class="up-menu-button">Расписание</div>
+            <div class="up-menu-button">Преподователи</div>
+            <div class="up-menu-button">Рассылка</div>
+            <div class="up-menu-button" style="margin-right:auto">Котакты</div>
+
+            <div class="up-menu-button-sign-home"><a>Зайти в кабинет</a></div>
+        </div>
+
+        <!-- контент по середине -->
+        <div class="main-content">
+
+            <div class="main-text">
+                Первый курс<br />
+                по компьютерной сборке
+            </div>
+
+            <div class="timer-data">
+                <div class="timer-box"><a id="days">18</a><br /><a class="timer-2text">Дней</a></div>
+                <div class="timer-box"><a id="hours">18</a><br /><a class="timer-2text">Часов</a></div>
+                <div class="timer-box"><a id="minutes">18</a><br /><a class="timer-2text">Минут</a></div>
+                <div class="timer-box"><a id="seconds">18</a><br /><a class="timer-2text">Секунд</a></div>
+
+            </div>
+        </div>
+
+        <!-- Нижнее main меню -->
+        <div class="down-menu-main">
+
+            <div class="down-button-main">Заказать курс</div>
+
+            <div id="down-main-item">
+                <a class="down-main-text">Учеников всего:</a>
+                <a class="down-main-text2" style="padding-left:101px;">200</a> <br />
+                <a class="down-main-text">Успешно закончили курс:</a>
+                <a class="down-main-text2">190</a>
+            </div>
+            <div id="down-main-item">
+                <a class="down-main-text">Заработано учениками:</a>
+                <a class="down-main-text2">400 000₽</a>
+
+                <div class="down-main-slider"> <div class="down-main-slider-fill"></div></div>
+                <a class="down-main-text">0</a>
+                <a class="down-main-text" style="margin-left:32.3vw;">1 000 000₽</a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--#endregion -->
+    <!--#region about  -->
+    <div class="about-contener">
+
+        <div class="about-fon-box">
+            <img class="about-img" src="References/img/about.png" style="width:95.7%;height:101.5%;" />
+        </div>
+
+        <div style="margin-left:7.24vw; padding-top:100px;">
+            <div class="about-text">Чем мы занимаемся?</div>
+            <div class="about-text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat<br />
+                elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc,orci fermentum<br />
+                vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean<br />
+                consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat<br />
+                mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet.<br />
+                Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis.
+            </div>
+        </div>
+    </div>
+    <!--#endregion -->
+    <!--#region start  -->
+
+
+    <div class="start-glav-text">
+        <img src="References/svg/icon-start.svg" style="width:6.48%;height:6.48%;margin-right:1vw;" />
+        <a>Быстрый старт</a>
+        <a class="start-text2">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</a>
+    </div>
+
+    <div class="start-container">
+        <div class="start-item" style="margin-left:0px;">
+            <div class="start-item-text">100%</div>
+            <div class="start-quare" style=" margin-top:1vw;"></div>
+            <a class="start-text3" style=" margin-top: 1.8vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</a>
+        </div>
+        <div class="start-item">
+            <div class="start-item-text">75%</div>
+            <div class="start-quare" style=" margin-top: 1.5vw; height: 3vw; background-image: linear-gradient(-90deg,#C89AFC, #7C6AFA);"></div>
+            <a class="start-text3" style=" margin-top: 2.3vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</a>
+        </div>
+        <div class="start-item">
+            <div class="start-item-text">50%</div>
+            <div class="start-quare" style=" margin-top:2vw;  height:2vw;"></div>
+            <a class="start-text3" style=" margin-top: 2.8vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</a>
+        </div>
+        <div class="start-item" style="margin-right:0px;">
+            <div class="start-item-text">Итог</div>
+            <div class="start-quare" style=" margin-top: 2.5vw; height: 1vw; background-image: linear-gradient(-90deg,#C89AFC, #7C6AFA); "></div>
+            <a class="start-text3" style=" margin-top: 3.3vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</a>
+        </div>
+    </div>
+
+
+    <!--#endregion-->
+    <!--#region advature  -->
+    <div class="advanture-glav-text">Получите профессию прямо сейчас</div>
+    <div class="advanture-container">
+        <div class="advanture-item" style="padding-left:18.8vw;">
+            <img src="References/svg/icon-1.svg" style="width:5.2vw;height:5.2vw;" />
+            <div class="advanture-item-text">
+                Только практические
+                навыки в работе
+            </div>
+            <div class="advanture-item-text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+
+        </div>
+
+        <div class="advanture-item">
+            <img src="References/svg/icon-2.svg" style="width:5.2vw;height:5.2vw;" />
+            <div class="advanture-item-text">
+                Только практические
+                навыки в работе
+            </div>
+            <div class="advanture-item-text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+        </div>
+
+        <div class="advanture-item" style="padding-right:18.8vw;">
+            <img src="References/svg/icon-3.svg" style="width:5.2vw;height:5.2vw;" />
+            <div class="advanture-item-text">
+                Только практические
+                навыки в работе
+            </div>
+            <div class="advanture-item-text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </div>
+        </div>
+    </div>
+    <!--#endregion-->
+    <!--#region partners  -->
+
+    <div class="partners-text-img-con">
+        <img src="References/svg/partners-icon.svg" style="width: 100%; height: 100%; grid-column:1; grid-row: 1; " />
+        <a class="partners-glav-text">Партнеры - топовые бренды</a>
+    </div>
+
+    <div class="partners-container">
+        <div class="partners-item" style="border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF; ">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width:10.3vw;height:auto;" />
+        </div>
+
+        <div class="partners-item" style="border-right: 1px solid #FFFFFF; border-bottom: 1px solid #FFFFFF; ">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width: 10.3vw; height: auto;" />
+        </div>
+
+        <div class="partners-item" style="border-bottom: 1px solid #FFFFFF; ">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width: 10.3vw; height: auto;" />
+        </div>
+
+        <div class="partners-item" style="border-right: 1px solid #FFFFFF;">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width: 10.3vw; height: auto;" />
+        </div>
+
+        <div class="partners-item" style="border-right: 1px solid #FFFFFF;">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width: 10.3vw; height: auto;" />
+        </div>
+
+        <div class="partners-item">
+            <img src="References/img/logo.png" style="margin-top: 1.3vw; width: 10.3vw; height: auto;" />
+        </div>
+
+    </div>
+
+    <!--#endregion -->
+    <!--#region program  -->
+
+    <div class="program-glav-text-img">
+        <img src="References/svg/program-icon.svg" style="width:5vw; height: 5vw;" />
+        <div style="padding-top:50px;">Программа обучения</div>
+        <div class="program-text-opacity">Больше 90% учеников прошли полный курс и смогли<br /> собрать свой первый компьютер</div>
+    </div>
+
+    <div class="trunk">
+        <div class="program-item-left">
+            <a class="program-text-opacity-tree" style="padding-right:20px;">Неделя №1</a>
+            <div class="program-text-tree" style="padding-right:20px;">
+                <div class="program-line"></div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+        <div class="program-item-right">
+            <a class="program-text-opacity-tree" style="padding-left:20px;">Неделя №2</a>
+            <div class="program-text-tree" style="padding-left:20px;">
+                <div class="program-line" style=" margin-left:-3.1vw;"> </div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+        <div class="program-item-left">
+            <a class="program-text-opacity-tree" style="padding-right:20px;">Неделя №3</a>
+            <div class="program-text-tree" style="padding-right:20px;">
+                <div class="program-line"></div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+        <div class="program-item-right">
+            <a class="program-text-opacity-tree" style="padding-left:20px;">Неделя №4</a>
+            <div class="program-text-tree" style="padding-left:20px;">
+                <div class="program-line" style=" margin-left:-3.1vw;"> </div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+        <div class="program-item-left">
+            <a class="program-text-opacity-tree" style="padding-right:20px;">Неделя №5</a>
+            <div class="program-text-tree" style="padding-right:20px;">
+                <div class="program-line"></div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+        <div class="program-item-right">
+            <a class="program-text-opacity-tree" style="padding-left:20px;">Неделя №6</a>
+            <div class="program-text-tree" style="padding-left:20px;">
+                <div class="program-line" style=" margin-left:-3.1vw;"> </div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+
+
+        <div class="program-item-left">
+            <a class="program-text-opacity-tree" style="padding-right:20px;">Неделя №7</a>
+            <div class="program-text-tree" style="padding-right:20px;">
+                <div class="program-line"></div>
+                Красивая часть курса,<br />
+                которая помогает в успехе
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--#endregion -->
+    <!--#region ticher  -->
+    <div class="ticher-text-img-con">
+        <img src="References/svg/partners-icon.svg" style="width: 100%; height: 100%;" />
+        <div class="ticher-glav-text">Ваши преподователи</div>
+    </div>
+
+    <div class="ticher-container">
+
+        <div class="ticher-item" style="padding-left:0px;">
+            <img src="References/img/tich2.png" style="width: 100%; height: auto;" />
+            <div class="ticher-item-text">
+                Дмитрий Иванов
+            </div>
+            <div class="ticher-item-text2">
+                Специалист по мьельнингу
+            </div>
+            <div class="ticher-button"><a style=" ">Биография</a></div>
+        </div>
+
+        <div class="ticher-item" style="padding-right:50px;padding-left:50px;">
+            <img src="References/img/tich1.png" style="width: 100%; height: auto;" />
+            <div class="ticher-item-text">
+                Дмитрий Иванов
+            </div>
+            <div class="ticher-item-text2">
+                Специалист по мьельнингу
+            </div>
+            <div class="ticher-button">Биография</div>
+        </div>
+
+        <div class="ticher-item" style="padding-right:0px;">
+            <img src="References/img/tich3.png" style="width: 100%; height: auto;" />
+            <div class="ticher-item-text">
+                Дмитрий Иванов
+            </div>
+            <div class="ticher-item-text2">
+                Специалист по мьельнингу
+            </div>
+            <div class="ticher-button">Биография</div>
+        </div>
+
+
+    </div>
+    <!--#endregion -->
+    <!--#region end  -->
+    <div class="end-glav-text">Статьи каждую неделю</div>
+    <div class="end-text-opacity">Больше 90% учеников прошли полный курс и смогли</br> собрать свой первый компьютер</div>
+    <div class="input-container">
+        <input type="text" placeholder="E-mail">
+        <button type="submit" class="end-button">Подписаться</button>
+    </div>
+
+    <div class="end-button-container">
+        <div class="end-down-button"><img class="end-img-but" src="References/svg/vk.svg" style="width:48%;height:48%;" /></div>
+        <div class="end-down-button"><img class="end-img-but" src="References/svg/youtube.svg" style="width:48%;height:48%;" /></div>
+        <div class="end-down-button"><img class="end-img-but" src="References/svg/facebook.svg" style="width:48%;height:48%;" /></div>
+        <div class="end-down-button"><img class="end-img-but" src="References/svg/instagram.svg" style="width:48%;height:48%;" /></div>
+    </div>
+
+    <!--#endregion-->
+    <script>
+
+        //Время до ночала
+        const countdownDate = new Date("2025-01-01T00:00:00").getTime();
+
+        const countdown = setInterval(() =>
+        {
+            const now = new Date().getTime();//дата пользователя
+            const distance = countdownDate - now;//разница дат
+
+            //делаем расчеты
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            //записываем все в id
+            document.getElementById("days").innerHTML = (days);
+            document.getElementById("hours").innerHTML = (hours);
+            document.getElementById("minutes").innerHTML = (minutes);
+            document.getElementById("seconds").innerHTML = (seconds);
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("days").innerHTML = "";
+                document.getElementById("hours").innerHTML = "";
+                document.getElementById("minutes").innerHTML = "";
+                document.getElementById("seconds").innerHTML = "";
+                document.querySelector(".countdown").innerHTML = "Event has started!";
+            }
+        }, 1000);
+
+
+    </script>
+</body>
+</html>
